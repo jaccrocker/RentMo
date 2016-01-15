@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>RepositoryUserService.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="right"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Spring Social Sign In MVC Normal</a> &gt; <a href="index.html" class="el_package">net.petrikainulainen.spring.social.signinmvc.user.service</a> &gt; <span class="el_source">RepositoryUserService.java</span></div><h1>RepositoryUserService.java</h1><pre class="source lang-java linenums">package net.petrikainulainen.spring.social.signinmvc.user.service;
+
+import net.petrikainulainen.spring.social.signinmvc.user.dto.RegistrationForm;
+import net.petrikainulainen.spring.social.signinmvc.user.model.User;
+import net.petrikainulainen.spring.social.signinmvc.user.repository.UserRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+/**
+ * @author Petri Kainulainen
+ */
+@Service
+public class RepositoryUserService implements UserService {
+
+<span class="fc" id="L19">    private static final Logger LOGGER = LoggerFactory.getLogger(RepositoryUserService.class);</span>
+
+    private PasswordEncoder passwordEncoder;
+
+    private UserRepository repository;
+
+    @Autowired
+<span class="fc" id="L26">    public RepositoryUserService(PasswordEncoder passwordEncoder, UserRepository repository) {</span>
+<span class="fc" id="L27">        this.passwordEncoder = passwordEncoder;</span>
+<span class="fc" id="L28">        this.repository = repository;</span>
+<span class="fc" id="L29">    }</span>
+
+    @Transactional
+    @Override
+    public User registerNewUserAccount(RegistrationForm userAccountData) throws DuplicateEmailException {
+<span class="fc" id="L34">        LOGGER.debug(&quot;Registering new user account with information: {}&quot;, userAccountData);</span>
+
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        if (emailExist(userAccountData.getEmail())) {</span>
+<span class="fc" id="L37">            LOGGER.debug(&quot;Email: {} exists. Throwing exception.&quot;, userAccountData.getEmail());</span>
+<span class="fc" id="L38">            throw new DuplicateEmailException(&quot;The email address: &quot; + userAccountData.getEmail() + &quot; is already in use.&quot;);</span>
+        }
+
+<span class="fc" id="L41">        LOGGER.debug(&quot;Email: {} does not exist. Continuing registration.&quot;, userAccountData.getEmail());</span>
+
+<span class="fc" id="L43">        String encodedPassword = encodePassword(userAccountData);</span>
+
+<span class="fc" id="L45">        User.Builder user = User.getBuilder()</span>
+                .email(userAccountData.getEmail())
+                .firstName(userAccountData.getFirstName())
+                .lastName(userAccountData.getLastName())
+                .password(encodedPassword);
+
+<span class="fc bfc" id="L51" title="All 2 branches covered.">        if (userAccountData.isSocialSignIn()) {</span>
+<span class="fc" id="L52">            user.signInProvider(userAccountData.getSignInProvider());</span>
+        }
+
+<span class="fc" id="L55">        User registered = user.build();</span>
+
+<span class="fc" id="L57">        LOGGER.debug(&quot;Persisting new user with information: {}&quot;, registered);</span>
+
+<span class="fc" id="L59">        return repository.save(registered);</span>
+    }
+
+    private boolean emailExist(String email) {
+<span class="fc" id="L63">        LOGGER.debug(&quot;Checking if email {} is already found from the database.&quot;, email);</span>
+
+<span class="fc" id="L65">        User user = repository.findByEmail(email);</span>
+
+<span class="fc bfc" id="L67" title="All 2 branches covered.">        if (user != null) {</span>
+<span class="fc" id="L68">            LOGGER.debug(&quot;User account: {} found with email: {}. Returning true.&quot;, user, email);</span>
+<span class="fc" id="L69">            return true;</span>
+        }
+
+<span class="fc" id="L72">        LOGGER.debug(&quot;No user account found with email: {}. Returning false.&quot;, email);</span>
+
+<span class="fc" id="L74">        return false;</span>
+    }
+
+    private String encodePassword(RegistrationForm dto) {
+<span class="fc" id="L78">        String encodedPassword = null;</span>
+
+<span class="fc bfc" id="L80" title="All 2 branches covered.">        if (dto.isNormalRegistration()) {</span>
+<span class="fc" id="L81">            LOGGER.debug(&quot;Registration is normal registration. Encoding password.&quot;);</span>
+<span class="fc" id="L82">            encodedPassword = passwordEncoder.encode(dto.getPassword());</span>
+        }
+
+<span class="fc" id="L85">        return encodedPassword;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.6.3.201306030806</span></div></body></html>
