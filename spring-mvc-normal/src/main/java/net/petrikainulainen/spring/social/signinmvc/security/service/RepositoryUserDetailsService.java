@@ -1,19 +1,22 @@
 package net.petrikainulainen.spring.social.signinmvc.security.service;
 
-import net.petrikainulainen.spring.social.signinmvc.security.dto.ExampleUserDetails;
-import net.petrikainulainen.spring.social.signinmvc.user.model.User;
-import net.petrikainulainen.spring.social.signinmvc.user.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+import net.petrikainulainen.spring.social.signinmvc.security.dto.ExampleUserDetails;
+import net.petrikainulainen.spring.social.signinmvc.user.model.User;
+import net.petrikainulainen.spring.social.signinmvc.user.repository.UserRepository;
 
 /**
  * This class loads the requested user by using a Spring Data JPA repository.
  * @author Petri Kainulainen
  */
+@Service
 public class RepositoryUserDetailsService implements UserDetailsService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RepositoryUserDetailsService.class);

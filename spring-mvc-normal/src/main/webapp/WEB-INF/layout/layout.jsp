@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
@@ -10,12 +11,17 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/bootstrap-theme.css"/>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/font-awesome.css"/>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/tenantProperties.css" />
     <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/vendor/jquery-2.0.3.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/vendor/bootstrap.js"></script>
     <sitemesh:write property="head"/>
 </head>
 <body>
 <div class="page">
+	<jsp:include page="../jsp/includes/header.jsp" /> 
+	<!-- 
     <div class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -62,13 +68,15 @@
                     <sec:authentication property="principal.username"/>
                 </p>
             </sec:authorize>
-        </div><!-- /.navbar-collapse -->
+        </div><!-- /.navbar-collapse ->
     </div>
+    -->
     <div class="content">
         <div id="view-holder">
             <sitemesh:write property="body"/>
         </div>
     </div>
+    <jsp:include page="../jsp/includes/footer.jsp" />
 </div>
 </body>
 </html>

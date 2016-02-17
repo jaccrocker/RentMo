@@ -239,8 +239,10 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>8.1.12.v20130726</version>
                 <configuration>
+                	<!-- <jvmArgs>-javaagent:%REBEL_HOME%/jrebel.jar -Drebel.remoting_plugin=true</jvmArgs> -->
                     <stopKey>todostop</stopKey>
                     <stopPort>9999</stopPort>
+                    <scanIntervalSeconds>0</scanIntervalSeconds>
                 </configuration>
             </plugin>
         </plugins>

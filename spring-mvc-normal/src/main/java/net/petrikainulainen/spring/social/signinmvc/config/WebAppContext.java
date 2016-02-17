@@ -21,7 +21,10 @@ import java.util.Properties;
 @ComponentScan(basePackages = {
         "net.petrikainulainen.spring.social.signinmvc.common.controller",
         "net.petrikainulainen.spring.social.signinmvc.security.controller",
-        "net.petrikainulainen.spring.social.signinmvc.user.controller"
+        "net.petrikainulainen.spring.social.signinmvc.user.controller",
+        "com.jac.spring.rentmo.controllers",
+        "com.jac.spring.rentmo.managers",
+        "net.petrikainulainen.spring.social.signinmvc.security.service"
 })
 @EnableWebMvc
 public class WebAppContext extends WebMvcConfigurerAdapter {

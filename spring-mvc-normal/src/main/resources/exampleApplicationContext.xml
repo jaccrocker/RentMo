@@ -9,6 +9,7 @@
     <import resource="exampleApplicationContext-persistence.xml"/>
     <import resource="exampleApplicationContext-security.xml"/>
     <import resource="exampleApplicationContext-social.xml"/>
+    <import resource="applicationContext-web.xml"/>
 
     <context:component-scan base-package="net.petrikainulainen.spring.social.signinmvc.user.service"/>
 

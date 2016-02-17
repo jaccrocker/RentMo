@@ -1,0 +1,42 @@
+#header {
+	display: table;
+	position: relative;
+	float: none;
+	vertical-align: center;
+	left: 0;
+	top: 0;
+	height: 70px;
+	width: 375px;
+	/* border-style: dotted; */
+	background-color: white;
+}
+
+#header-left {
+	display: table-cell;
+	float: none;
+	width: 33%;
+	height: 100%;
+	/* border-style: dotted; */
+	vertical-align: middle;
+	text-align: left;
+}
+
+#header-center {
+	display: table-cell;
+	float: none;
+	width: 33%;
+	height: 100%;
+	/* border-style: dotted; */
+	vertical-align: middle;
+	text-align: center;
+}
+
+#header-right {
+	display: table-cell;
+	float: none;
+	width: 33%;
+	height: 100%;
+	/* border-style: dotted; */
+	vertical-align: middle;
+	text-align: right;
+}

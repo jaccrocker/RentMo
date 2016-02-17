@@ -14,7 +14,7 @@ public class HomeController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(HomeController.class);
 
-    protected static final String VIEW_NAME_HOMEPAGE = "index";
+    protected static final String VIEW_NAME_HOMEPAGE = "rentmo-index";
 
     @RequestMapping(value="/", method = RequestMethod.GET)
     public String showHomePage() {

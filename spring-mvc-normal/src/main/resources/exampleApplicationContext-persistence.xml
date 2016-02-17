@@ -42,4 +42,5 @@
     </bean>
 
     <jpa:repositories base-package="net.petrikainulainen.spring.social.signinmvc.user.repository"/>
+    <jpa:repositories base-package="com.jac.spring.rentmo.repository"/>
 </beans>

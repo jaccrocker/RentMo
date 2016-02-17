@@ -1,0 +1,136 @@
+.page {
+	max-width: 375px;
+	position:relative;
+}
+
+html,
+body {
+	margin:0;
+	padding:0;
+	/* height:800px; */
+	width: 375px;
+	margin-bottom: 20px;
+}
+
+
+#footer {
+	display: table;
+	bottom:0;
+	left:0;
+	width: 375px;
+	z-index: 114;
+	min-height: 73px;
+	/* border-style: dotted; */
+	/* margin-top: 10px; */
+	padding-top: 10px;
+}
+
+#footer-top-line {
+	float: left;
+	position: relative;
+	width: 375px;
+	height: 2px;
+	margin-top: 0;
+	margin-left: 0;
+	z-index: 13;
+}
+#footer-row{
+	display: table-row;
+}
+
+#footer-left {
+	display: table-cell;
+	float: none;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	color: #fe9d00;
+	font: 9px/11px Helvetica Neue;
+}
+
+#footer-mid-left {
+	display: table-cell;
+	float: none;
+	width: 25%;
+	height: 100%;
+	/*border-style: dotted;*/
+	vertical-align: middle;
+	text-align: center;
+	color: #a0a0a0;
+	font: 9px/11px Helvetica Neue;
+}
+
+#footer-mid-right {
+	display: table-cell;
+	float: none;
+	width: 25%;
+	height: 100%;
+	/*border-style: dotted;*/
+	vertical-align: middle;
+	text-align: center;
+	color: #a0a0a0;
+	font: 9px/11px Helvetica Neue;
+}
+
+#footer-right {
+	display: table-cell;
+	float: none;
+	width: 25%;
+	height: 100%;
+	/*border-style: dotted;*/
+	vertical-align: middle;
+	text-align: center;
+	color: #a0a0a0;
+	font: 9px/11px Helvetica Neue;
+}
+/* 
+#home-text {
+	position: relative;
+	margin-top: 5px;
+	z-index: 11;
+	min-height: 19px;
+	color: #a0a0a0;
+	text-align: center;
+}
+
+#home-text * {
+	color: #fe9d00 !important;
+}
+
+#bills-text {
+  float: left;
+  position: relative;
+  width: 23px;
+  margin-top: 5px;
+  margin-left: 65px;
+  z-index: 8;
+  min-height: 18px;
+  color: #a0a0a0;
+}
+
+#bills-text *, #profile-text *, #service-request-text * {
+  color: #a0a0a0 !important;
+}
+
+#service-request-text {
+  float: left;
+  position: relative;
+  width: 79px;
+  margin-top: 5px;
+  margin-left: 42px;
+  z-index: 6;
+  min-height: 18px;
+  color: #a0a0a0;
+}
+
+#profile-text {
+  float: left;
+  position: relative;
+  width: 33px;
+  margin-top: 5px;
+  margin-left: 38px;
+  z-index: 4;
+  min-height: 18px;
+  color: #a0a0a0;
+}
+ */

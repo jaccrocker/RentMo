@@ -1,0 +1,789 @@
+.createButtonClass{
+	float: left;
+	position: relative;
+	width: 375px;
+	height: 53px;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	background-color: #fe9d00;
+	margin-top: 15px;
+	/* margin-bottom: 15px; */
+	border: 0;
+}
+
+#create-property-button {
+	float: left;
+	position: relative;
+	width: 375px;
+	margin-top: 17px;
+	margin-left: 0;
+	z-index: 17;
+	min-height: 53px;
+	/*border-style: dotted;*/
+	/* clear: left; */
+}
+
+#create-orange-bar {
+	float: left;
+	position: relative;
+	width: 375px;
+	height: 53px;
+	margin-top: 0;
+	margin-left: 0;
+	z-index: 15;
+	background-color: #fe9d00;
+	/* border-style: dotted; */
+}
+
+#create {
+	float: left;
+	position: relative;
+	width: 63px;
+	margin-top: 15px;
+	margin-left: -206px;
+	z-index: 16;
+	min-height: 34px;
+	/* border-style: dotted; */
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+#content {
+	float: left;
+	position: relative;
+	width: 375px;
+	margin-top: 5px;
+	margin-left: 0;
+	z-index: 69;
+	min-height: 553px;
+	clear: left;
+	/*border-style: dotted;*/
+}
+
+#address-search {
+	float: left;
+	position: relative;
+	width: 375px;
+	margin-top: 0;
+	margin-left: 0;
+	z-index: 68;
+	min-height: 52px;
+}
+
+#address-search-bar-dark-background {
+	float: left;
+	position: relative;
+	width: 375px;
+	height: 52px;
+	margin-top: 0;
+	margin-left: 0;
+	z-index: 63;
+	background-color: #83817e;
+	opacity: 0.4;
+}
+
+#address-search-bar-white-background {
+	float: left;
+	position: relative;
+	width: 358px;
+	height: 32px;
+	margin-top: 10px;
+	margin-left: -367px;
+	z-index: 64;
+	background-color: #fff;
+	-moz-border-radius: 4.8px/4.76px;
+	-webkit-border-radius: 4.8px/4.76px;
+	border-radius: 4.8px/4.76px;
+}
+
+#address-search-bar-input {
+	float: left;
+	position: relative;
+	width: 358px;
+	height: 32px;
+	margin-top: 10px;
+	margin-left: -367px;
+	z-index: 64;
+	background-color: #fff;
+	-moz-border-radius: 4.8px/4.76px;
+	-webkit-border-radius: 4.8px/4.76px;
+	border-radius: 4.8px/4.76px;
+}
+
+.address-search-bar-input {
+	padding-left: 40px;
+}
+/*
+#address-search-bar-input{
+  float: left;
+  position: relative;
+  width: 323px;
+  margin-top: 10px;
+  margin-left: -333px;
+  height: 32px;
+  z-index: 66;
+  min-height: 24px;
+  color: #83817e;
+  background-color: #fff;
+  -moz-border-radius: 4.8px / 4.76px;
+  -webkit-border-radius: 4.8px / 4.76px;
+  border-radius: 4.8px / 4.76px;
+}
+*/
+#search-icon {
+	float: left;
+	position: relative;
+	width: 17px;
+	height: 18px;
+	margin-top: 17px;
+	margin-left: -358px;
+	z-index: 65;
+}
+
+#vertical-search-line {
+	float: left;
+	position: relative;
+	width: 2px;
+	height: 32px;
+	margin-top: 10px;
+	margin-left: -335px;
+	z-index: 67;
+}
+
+#-hermosa-ave {
+	float: left;
+	position: relative;
+	width: 112px;
+	margin-top: 18px;
+	margin-left: -325px;
+	z-index: 66;
+	min-height: 24px;
+	color: #83817e;
+}
+
+#-hermosa-ave *, #due-date *, #rent-amount *, #security-deposit * {
+	color: #83817e !important;
+}
+
+#address-search-results {
+	float: left;
+	position: relative;
+	width: 375px;
+	margin-top: 0;
+	margin-left: -375px;
+	z-index: 61;
+	min-height: 250px;
+}
+
+.google-map-overlay {
+	float: left;
+	position: relative;
+	width: 375px;
+	height: 250px;
+	margin-top: 0;
+	margin-left: 0;
+	/* padding-bottom: 20px; */
+	z-index: 54;
+}
+
+#address-box-1-input {
+	float: left;
+	position: relative;
+	width: 142px;
+	height: 22px;
+	margin-top: 82px;
+	margin-left: -367px;
+	z-index: 58;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	opacity: 0.8;
+}
+
+.address-box-1 {
+	float: left;
+	position: relative;
+	width: 142px;
+	height: 22px;
+	margin-top: 82px;
+	margin-left: -367px;
+	z-index: 57;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	opacity: 0.8;
+}
+
+#address-box-2-input {
+	float: left;
+	position: relative;
+	width: 142px;
+	height: 22px;
+	margin-top: 107px;
+	margin-left: -367px;
+	z-index: 56;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	opacity: 0.8;
+}
+
+.address-box-2 {
+	float: left;
+	position: relative;
+	width: 142px;
+	height: 22px;
+	margin-top: 107px;
+	margin-left: -367px;
+	z-index: 55;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	opacity: 0.8;
+}
+
+#address-box-input {
+	float: left;
+	position: relative;
+	width: 142px;
+	height: 22px;
+	margin-top: 58px;
+	margin-left: -367px;
+	z-index: 60;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	opacity: 0.8;
+}
+
+.address-box-input {
+	float: left;
+	position: relative;
+	width: 142px;
+	height: 22px;
+	margin: 0;
+	padding-left: 8px;
+	text-indent: 0;
+	text-align: left;
+	font: 9px/11px Helvetica Neue;
+	text-transform: none;
+	text-decoration: none;
+	color: black;
+	letter-spacing: normal;
+	min-height: 17px;
+}
+
+.address-box {
+	float: left;
+	position: relative;
+	width: 142px;
+	height: 22px;
+	margin-top: 58px;
+	margin-left: -367px;
+	z-index: 59;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	opacity: 0.8;
+}
+
+#street-name {
+	float: left;
+	position: relative;
+	width: 82px;
+	margin-top: 65px;
+	margin-left: -360px;
+	z-index: 60;
+	min-height: 17px;
+	color: #666;
+}
+
+#apt-num *, #city-state-zip *, #street-name * {
+	color: #666 !important;
+}
+
+#city-state-zip {
+	float: left;
+	position: relative;
+	width: 115px;
+	margin-top: 113px;
+	margin-left: -360px;
+	z-index: 56;
+	min-height: 17px;
+	color: #666;
+}
+
+#apt-num {
+	float: left;
+	position: relative;
+	width: 68px;
+	margin-top: 89px;
+	margin-left: -360px;
+	z-index: 58;
+	min-height: 17px;
+	color: #666;
+}
+
+#rental-details {
+	display: table;
+	table-layout: fixed;
+	float: none;
+	position: relative;
+	width: 355px;
+	margin-top: 0;
+	padding-top: 10px;
+	margin-left: 10px;
+	z-index: 52;
+	min-height: 82px;
+	clear: left;
+	/* border-style: dotted; */
+}
+
+#under-deposit-line {
+	float: left;
+	position: relative;
+	width: 355px;
+	height: 2px;
+	margin-top: 5px;
+	margin-left: 0;
+	z-index: 50;
+}
+
+#security-deposit {
+	display: table-row;
+	float: none;
+	position: relative;
+	margin-top: 0;
+	z-index: 51;
+	min-height: 24px;
+	color: #83817e;
+	/* border-style: dotted; */
+	vertical-align: middle;
+}
+
+#security-deposit-text {
+	display: table-cell;
+	float: none;
+	width: 25%;
+	position: relative;
+	margin-top: 00;
+	margin-left: -370px;
+	z-index: 153;
+	min-height: 24px;
+	color: #83817e;
+	/* border-style: dotted; */
+	text-align: right;
+}
+
+#security-deposit-input {
+	position: relative;
+	margin-top: 00;
+	z-index: 153;
+	min-height: 24px;
+	color: #83817e;
+	text-align: left;
+	border: 1px solid #ccc;
+	width: 220px;
+}
+
+#security-deposit-div {
+	display: table-cell;
+	width: 50%;
+	position: relative;
+	float: none;
+	/* margin-left: -120px; */
+	padding-left: 10px;
+	/* border-style: dotted; */
+	/* vertical-align: middle; */
+}
+	
+
+#under-amount-line {
+	float: left;
+	position: relative;
+	width: 355px;
+	height: 2px;
+	margin-top: 5px;
+	margin-left: 0;
+	z-index: 48;
+	clear: left;
+}
+
+#rent-amount {
+	display: table-row;
+	float: none;
+	position: relative;
+	width: 131px;
+	margin-top: 0px;
+	margin-left: -329px;
+	z-index: 49;
+	min-height: 24px;
+	color: #83817e;
+	/* border-style: dotted; */
+	vertical-align: middle;
+}
+
+#rent-amount-text {
+	display: table-cell;
+	float: none;
+	width: 25%;
+	position: relative;
+	margin-top: 00;
+	margin-left: -370px;
+	z-index: 153;
+	min-height: 24px;
+	color: #83817e;
+	/* border-style: dotted; */
+	text-align: right;
+	vertical-align: middle;
+}
+
+#rent-amount-input {
+	position: relative;
+	/* margin-top: 00; */
+	z-index: 153;
+	min-height: 24px;
+	color: #83817e;
+	/* border-style: dotted; */
+	text-align: left;
+	border: 1px solid #ccc;
+	width: 220px;
+	margin-top: 5px;
+}
+
+#rent-amount-div {
+	display: table-cell;
+	width: 50%;
+	position: relative;
+	float: none;
+	margin-left: -220px;
+	/* border-style: dotted; */
+	padding-left: 10px;
+	/* vertical-align: middle; */
+}
+
+#due-date {
+	display: table-row;
+	float: none;
+	position: relative;
+	width: 135px;
+	margin-top: 6px;
+	margin-left: 46px;
+	z-index: 47;
+	min-height: 24px;
+	color: #83817e;
+	clear: left;
+	/* border-style: dotted; */
+	vertical-align: middle;
+}
+
+#due-date-text {
+	display: table-cell;
+	float: none;
+	width: 25%;
+	position: relative;
+	margin-top: 00;
+	margin-left: -370px;
+	z-index: 153;
+	min-height: 24px;
+	color: #83817e;
+	/* border-style: dotted; */
+	text-align: right;
+}
+
+#due-date-input {
+	position: relative;
+	margin-top: 5px;
+	z-index: 153;
+	min-height: 24px;
+	color: #83817e;
+	/* border-style: dotted; */
+	text-align: left;
+	border: 1px solid #ccc;
+	width: 80px;
+}
+
+#due-date-div {
+	display: table-cell;
+	width: 50%;
+	position: relative;
+	float: none;
+	margin-left: -220px;
+	/* border-style: dotted; */
+	padding-left: 10px;
+}
+
+#calendar-icon {
+	float: none;
+	position: relative;
+	width: 18px;
+	height: 19px;
+	margin-top: 0px;
+	margin-left: 2px;
+	z-index: 46;
+}
+
+#action-buttons {
+	float: left;
+	position: relative;
+	width: 340px;
+	margin-top: 11px;
+	margin-left: 16px;
+	z-index: 44;
+	min-height: 41px;
+	clear: left;
+}
+
+#add-photos-1 {
+	float: left;
+	position: relative;
+	width: 161px;
+	margin-top: 0;
+	margin-left: 0;
+	z-index: 43;
+	min-height: 41px;
+}
+
+#orange-oval {
+	float: left;
+	position: relative;
+	width: 161px;
+	height: 41px;
+	margin-top: 0;
+	margin-left: 0;
+	z-index: 36;
+}
+
+#add-photos-icon {
+	float: left;
+	position: relative;
+	width: 29px;
+	margin-top: 8px;
+	margin-left: -139px;
+	z-index: 42;
+	min-height: 24px;
+}
+
+#add-photos-frame {
+	float: left;
+	position: relative;
+	width: 29px;
+	height: 24px;
+	margin-top: 0;
+	margin-left: 0;
+	z-index: 39;
+}
+
+#add-photos-mountain {
+	float: left;
+	position: relative;
+	width: 12px;
+	height: 8px;
+	margin-top: 12px;
+	margin-left: -15px;
+	z-index: 41;
+}
+
+#add-photos-sun {
+	float: left;
+	position: relative;
+	width: 5px;
+	height: 6px;
+	margin-top: 4px;
+	margin-left: -11px;
+	z-index: 40;
+	background-color: #fe9d00;
+	-moz-border-radius: 2.195px/2.305px;
+	-webkit-border-radius: 2.195px/2.305px;
+	border-radius: 2.195px/2.305px;
+	border: 1px solid #fff;
+}
+
+#add-photos {
+	float: left;
+	position: relative;
+	width: 86px;
+	margin-top: 11px;
+	margin-left: -104px;
+	z-index: 37;
+	min-height: 28px;
+}
+
+#add-tenants-1 {
+	float: left;
+	position: relative;
+	width: 161px;
+	margin-top: 0;
+	margin-left: 18px;
+	z-index: 34;
+	min-height: 41px;
+}
+
+#blue-oval {
+	float: left;
+	position: relative;
+	width: 161px;
+	height: 41px;
+	margin-top: 0;
+	margin-left: 0;
+	z-index: 31;
+}
+
+#add-tenant-icon {
+	float: left;
+	position: relative;
+	width: 22px;
+	height: 23px;
+	margin-top: 8px;
+	margin-left: -135px;
+	z-index: 33;
+}
+
+#add-tenants {
+	float: left;
+	position: relative;
+	width: 91px;
+	margin-top: 11px;
+	margin-left: -108px;
+	z-index: 32;
+	min-height: 28px;
+}
+
+#pictures-section {
+	float: left;
+	position: relative;
+	width: 375px;
+	margin-top: 10px;
+	margin-left: 0;
+	z-index: 28;
+	min-height: 89px;
+	clear: left;
+}
+
+.under-line {
+	float: none;
+	position: relative;
+	width: 375px;
+	height: 2px;
+	margin-top: 0;
+	margin-left: 0;
+	z-index: 19;
+}
+
+#under-buttons-line {
+	float: left;
+	position: relative;
+	width: 375px;
+	height: 2px;
+	margin-top: 0;
+	margin-left: 0;
+	z-index: 19;
+}
+
+#left-arrow-1 {
+	float: left;
+	position: relative;
+	width: 10px;
+	height: 17px;
+	margin-top: 44px;
+	margin-left: 12px;
+	z-index: 21;
+	clear: left;
+}
+
+#pictures {
+	float: left;
+	position: relative;
+	width: 302px;
+	margin-top: 13px;
+	margin-left: 14px;
+	z-index: 27;
+	min-height: 74px;
+}
+
+#property-pic {
+	float: left;
+	position: relative;
+	width: 71px;
+	height: 74px;
+	margin-top: 0;
+	margin-left: 0;
+	z-index: 26;
+}
+
+#property-pic-1 {
+	float: left;
+	position: relative;
+	width: 71px;
+	height: 74px;
+	margin-top: 0;
+	margin-left: 6px;
+	z-index: 25;
+}
+
+#property-pic-2 {
+	float: left;
+	position: relative;
+	width: 71px;
+	height: 74px;
+	margin-top: 0;
+	margin-left: 6px;
+	z-index: 24;
+}
+
+#property-pic-3 {
+	float: left;
+	position: relative;
+	width: 71px;
+	height: 74px;
+	margin-top: 0;
+	margin-left: 6px;
+	z-index: 23;
+}
+
+#right-arrow {
+	float: left;
+	position: relative;
+	width: 10px;
+	height: 17px;
+	margin-top: 44px;
+	margin-left: 15px;
+	z-index: 20;
+}
+
+#create-property-button {
+	float: left;
+	position: relative;
+	width: 375px;
+	margin-top: 17px;
+	margin-left: 0;
+	z-index: 17;
+	min-height: 53px;
+	/*border-style: dotted;*/
+	/* clear: left; */
+}
+
+#create-orange-bar {
+	float: left;
+	position: relative;
+	width: 375px;
+	height: 53px;
+	margin-top: 0;
+	margin-left: 0;
+	z-index: 15;
+	background-color: #fe9d00;
+	/* border-style: dotted; */
+}
+
+#create {
+	float: left;
+	position: relative;
+	width: 63px;
+	margin-top: 15px;
+	margin-left: -206px;
+	z-index: 16;
+	min-height: 34px;
+	/* border-style: dotted; */
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 15px;
+}

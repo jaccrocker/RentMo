@@ -40,22 +40,22 @@ public class SecurityContext extends WebSecurityConfigurerAdapter {
         http
                 //Configures form login
                 .formLogin()
-                    .loginPage("/login")
-                    .loginProcessingUrl("/login/authenticate")
-                    .failureUrl("/login?error=bad_credentials")
+                    .loginPage("/rentmo-login")
+                    .loginProcessingUrl("/rentmo-login/authenticate")
+                    .failureUrl("/rentmo-login?error=bad_credentials")
                 //Configures the logout function
                 .and()
                     .logout()
                         .deleteCookies("JSESSIONID")
                         .logoutUrl("/logout")
-                        .logoutSuccessUrl("/login")
+                        .logoutSuccessUrl("/rentmo-login")
                 //Configures url based authorization
                 .and()
                     .authorizeRequests()
                         //Anyone can access the urls
                         .antMatchers(
                                 "/auth/**",
-                                "/login",
+                                "/rentmo-login",
                                 "/signup/**",
                                 "/user/register/**"
                         ).permitAll()

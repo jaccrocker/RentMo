@@ -12,6 +12,8 @@ import javax.persistence.*;
 @Table(name = "user_accounts")
 public class User extends BaseEntity<Long> {
 
+	
+//	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -45,6 +47,8 @@ public class User extends BaseEntity<Long> {
     }
 
     @Override
+//    @ManyToOne
+//    @JoinColumn(name="tenant_id")
     public Long getId() {
         return id;
     }

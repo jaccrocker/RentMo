@@ -68,6 +68,7 @@ public final class layout_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
       out.write("<html>\n");
       out.write("<head>\n");
       out.write("    <title>");
@@ -86,6 +87,15 @@ public final class layout_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/static/css/style.css\"/>\n");
+      out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/static/css/header.css\"/>\n");
+      out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/static/css/footer.css\"/>\n");
+      out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/static/css/tenantProperties.css\" />\n");
       out.write("    <script type=\"text/javascript\" src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/static/js/vendor/jquery-2.0.3.js\"></script>\n");
@@ -96,6 +106,10 @@ public final class layout_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</head>\n");
       out.write("<body>\n");
       out.write("<div class=\"page\">\n");
+      out.write("\t");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "../jsp/includes/header.jsp", out, false);
+      out.write(" \n");
+      out.write("\t<!-- \n");
       out.write("    <div class=\"navbar navbar-default\" role=\"navigation\">\n");
       out.write("        <div class=\"navbar-header\">\n");
       out.write("            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-ex1-collapse\">\n");
@@ -130,13 +144,17 @@ public final class layout_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_sec_authorize_3(_jspx_page_context))
         return;
       out.write("\n");
-      out.write("        </div><!-- /.navbar-collapse -->\n");
+      out.write("        </div><!-- /.navbar-collapse ->\n");
       out.write("    </div>\n");
+      out.write("    -->\n");
       out.write("    <div class=\"content\">\n");
       out.write("        <div id=\"view-holder\">\n");
       out.write("            <sitemesh:write property=\"body\"/>\n");
       out.write("        </div>\n");
       out.write("    </div>\n");
+      out.write("    ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "../jsp/includes/footer.jsp", out, false);
+      out.write("\n");
       out.write("</div>\n");
       out.write("</body>\n");
       out.write("</html>");

@@ -1,6 +1,6 @@
 .content {
-    padding-left: 1em;
-    padding-right: 1em;
+    /* padding-left: 1em;
+    padding-right: 1em; */
 }
 
 .sign-in-text {
@@ -9,4 +9,82 @@
 
 .social-button-row {
     padding-top: 1.0em;
+}
+
+.rentmo-login {
+	background: url("../images/background.png") no-repeat center top fixed;
+	background-size: contain;
+	width: 428px;
+	height: auto;
+	background-position: center top;
+	margin: auto;
+}
+
+.addBankAccount {
+	background: url("../images/addBankAccountBackground.png") no-repeat center center fixed;
+	width: 428px;
+	height: auto;
+	background-size: contain; 
+	background-position: center 50px;
+	margin: auto;
+}
+
+.text-style-1 {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  text-align: center;
+  font: 9px/11px Helvetica Neue;
+  text-transform: none;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: normal;
+}
+
+.text-style-2 {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  text-align: left;
+  font: 10px/12px Helvetica Neue;
+  text-transform: none;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: normal;
+}
+
+.text-style-3 {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  text-align: left;
+  font: 16px/19px Helvetica Neue;
+  text-transform: none;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: -0.03em;
+}
+
+.text-style-4 {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  text-align: left;
+  font: 18px/22px Helvetica Neue;
+  text-transform: none;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: normal;
+}
+
+.text-style-5 {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  text-align: left;
+  font: 300 17px/20px Helvetica Neue;
+  text-transform: none;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: normal;
 }

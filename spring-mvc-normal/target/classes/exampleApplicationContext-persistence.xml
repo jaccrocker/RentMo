@@ -35,11 +35,12 @@
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
                 <prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</prop>
                 <prop key="hibernate.format_sql">true</prop>
-                <prop key="hibernate.hbm2ddl.auto">validate</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
                 <prop key="hibernate.show_sql">false</prop>
             </props>
         </property>
     </bean>
 
     <jpa:repositories base-package="net.petrikainulainen.spring.social.signinmvc.user.repository"/>
+    <jpa:repositories base-package="com.jac.spring.rentmo.repository"/>
 </beans>
